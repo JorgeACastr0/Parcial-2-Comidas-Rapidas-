@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "postgre": "^0.1.8",
+    "postgres": "^3.4.5"
+  },
+  "name": "parcial-2do-corte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeACastr0/Parcial-2-Comidas-Rapidas-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeACastr0/Parcial-2-Comidas-Rapidas-/issues"
+  },
+  "homepage": "https://github.com/JorgeACastr0/Parcial-2-Comidas-Rapidas-#readme"
+}
