@@ -14,7 +14,8 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/consultarrestaurante/1"
 					},
 					"response": []
 				},
@@ -22,7 +23,17 @@
 					"name": "New Request",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"El Rincón del Sabor\",\r\n    \"ciudad\": \"Ciudad de México\",\r\n    \"direccion\": \"Calle Principal 123, Colonia Centro\",\r\n    \"fecha_apertura\": \"2020-05-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/nuevorestaurante"
 					},
 					"response": []
 				},
@@ -30,7 +41,17 @@
 					"name": "New Request",
 					"request": {
 						"method": "PUT",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"El wero comida mexicana\",\r\n    \"ciudad\": \"Medellin\",\r\n    \"direccion\": \"Av. 54 # 43\",\r\n    \"fecha_apertura\": \"2022-10-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/actualizarrestaurantes/1"
 					},
 					"response": []
 				},
@@ -38,7 +59,8 @@
 					"name": "New Request",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/borrarrestaurantes/11"
 					},
 					"response": []
 				}
@@ -59,23 +81,44 @@
 					"name": "New Request",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Junan Villamil\",\r\n    \"rol\":\"supervisor\",\r\n    \"id_rest\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/nuevoempleado"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Juan Villamil\",\r\n    \"rol\":\"Supervisor\",\r\n    \"id_rest\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/actualizarempleados/51"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/api/borrarempleados/51"
 					},
 					"response": []
 				}
@@ -88,31 +131,62 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/listarproductos"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"arepa superespecial\",\r\n    \"precio\":30000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/productonuevo"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Arepa Super Especial\",\r\n    \"precio\":\"40000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/actualizarproductos/50"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\":\"2025-04-20\",\r\n    \"id_rest\":4,\r\n    \"total\":90000\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/borrarproductos/49"
 					},
 					"response": []
 				}
@@ -125,23 +199,103 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/listarpedidos"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\":\"2025-04-20\",\r\n    \"id_rest\":5,\r\n    \"total\":90000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/nuevopedido"
 					},
 					"response": []
 				},
 				{
 					"name": "New Request",
 					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\":\"2025-03-01\",\r\n    \"id_rest\":4,\r\n    \"total\":55000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/actualizarpedido/51"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/api/borrarpedido/51"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetallePedido",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/listardetallespedidos"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pedido\":50,\r\n    \"id_prod\":3,\r\n    \"cantidad\":2,\r\n    \"subtotal\":90000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/nuevodetallepedido"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pedido\":50,\r\n    \"id_prod\":7,\r\n    \"cantidad\":3,\r\n    \"subtotal\":21000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/actualizardetallepedido/50"
 					},
 					"response": []
 				},
@@ -156,13 +310,14 @@
 			]
 		},
 		{
-			"name": "DetallePedido",
+			"name": "Consultas Nativas",
 			"item": [
 				{
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/pedido/1/productos"
 					},
 					"response": []
 				},
@@ -170,7 +325,8 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/productos/mas-vendidos"
 					},
 					"response": []
 				},
@@ -178,7 +334,8 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/ventas/por-restaurante"
 					},
 					"response": []
 				},
@@ -186,7 +343,17 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "http://localhost:3000/api/pedidos/fecha/2024-04-07"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/empleados/rol/cocinero"
 					},
 					"response": []
 				}
